@@ -1,6 +1,6 @@
 window.CFG={
-  SUPABASE_URL:"uzwybilofexaaninwwvk",
-  SUPABASE_KEY:"us-west-2",
+  SUPABASE_URL:"https://uzwybilofexaaninwwvk.supabase.com",
+  SUPABASE_KEY:"sb_publishable_lD5LGbuazCnmzWZjadlTWQ_63HUqiCh",
   LANDING:"https://mktfashion.my.canva.site/adrianaresende",
   WHATSAPP:"553195529232"
 };
