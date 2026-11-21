@@ -1,4 +1,7 @@
-const C=window.CFG,sb=supabase.createClient(C.SUPABASE_URL,C.SUPABASE_KEY);
+addEventListener("error",e=>{const a=document.getElementById("app");if(a&&!a.innerHTML.trim())a.innerHTML='<p style="padding:30px;text-align:center;line-height:1.6">Erro no site: '+e.message+'</p>'});
+const C=window.CFG||{};
+if(typeof supabase==="undefined"||!/^https:\/\/.+\.supabase\.co/.test(C.SUPABASE_URL||"")||!C.SUPABASE_KEY||C.SUPABASE_KEY.indexOf("COLE_")===0){document.getElementById("app").innerHTML='<p style="padding:30px;text-align:center;line-height:1.7">⚠️ O arquivo <b>config.js</b> não está preenchido corretamente.<br>Confira a <b>Project URL</b> (começa com https:// e termina em .supabase.co) e a <b>chave anon</b> do Supabase.</p>';throw new Error("config.js inválido")}
+const sb=supabase.createClient(C.SUPABASE_URL,C.SUPABASE_KEY);
 const CATS=[["aneis","Anéis"],["brincos","Brincos"],["colares","Colares"],["pulseiras","Pulseiras"],["novidades","Novidades"],["moissanites","Moissanites"],["prata-rodinada","Prata Rodinada"],["banho-de-ouro","Banho de Ouro"]];
 const $=s=>document.querySelector(s),app=$("#app"),top_=$("#top"),dlg=$("#dlg");
 let user=null,prods=[];
