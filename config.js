@@ -1,7 +1,6 @@
-// Preencha estes 3 campos (veja o passo a passo)
 window.CFG={
-  SUPABASE_URL:"COLE_AQUI_A_PROJECT_URL",
-  SUPABASE_KEY:"COLE_AQUI_A_ANON_PUBLIC_KEY",
-  LANDING:"COLE_AQUI_O_ENDERECO_DA_LANDING_PAGE",
+  SUPABASE_URL:"uzwybilofexaaninwwvk",
+  SUPABASE_KEY:"us-west-2",
+  LANDING:"https://mktfashion.my.canva.site/adrianaresende",
   WHATSAPP:"553195529232"
 };
